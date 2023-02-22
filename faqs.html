@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Frequently Asked Questions</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search your doubts.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:100%;">FAQ's  </th>
+    
+  </tr>
+  <tr>
+    <td><h4 style="margin-bottom: 0px; padding-bottom: 0px;"> Q. Steps to Reset Kerala PSC Password/ Username ?</h4><br>1. Send SMS to 166 / 51969 / 9223166166. ... <br>
+      2. To know User ID sms KL USR. <br>
+      3. To reset your password sms KL USR RST USERID DATE_OF_BIRTH.
+    </td>   
+  </tr>
+  <tr>
+    <td><h4 style="margin-bottom: 0px; padding-bottom: 0px;"> Q. How can I get my lost PAN card number from Aadhar card ?</h4><br>
+      1. If you are wary of online methods, you can know your PAN number by calling a toll-free number 1800-180-1961.<br>
+      2. All you need to have Aadhaar details that the provider will ask to verify your details to ensure you are the original assessee of the PAN Card details you want to inquire about.
+    </td>
+  </tr>
+  <tr>
+    <td><h4 style="margin-bottom: 0px; padding-bottom: 0px;"> Q. Documents to Correct the Name of Mother in Birth Certificate ?</h4><br>
+      Its an offline service <br>
+      1. Birth Certificate<br>
+      2. School certificate of mother
+    </td>
+  </tr>
+  <tr>
+    <td><h4 style="margin-bottom: 0px; padding-bottom: 0px;"> Q. How to get Thundaper certificate ?</h4><br>
+      Its an offline service
+      
+    </td>
+  </tr>
+ 
+  
+  
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>

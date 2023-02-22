@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Biodata Templates</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Template </th>
+    <th style="width:40%;">Download link</th>
+  </tr>
+  <tr>
+    <td>Biodata template 31</td>
+    <td><a href="https://drive.google.com/file/d/1b5QQX9uFFBSy2Klxp0G8i-L9IVa0i1Ks/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 32</td>
+    <td><a href="https://drive.google.com/file/d/1S-8r9Okl-nt8F8x_C02kRPcei60HX-uz/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 33</td>
+    <td><a href="https://drive.google.com/file/d/1pTNYrViEj5E1_42xdjdirDBBRgFtLEeJ/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 34</td>
+    <td><a href="https://drive.google.com/file/d/1LjSpBoR06xzYb-YGRjyb2W67861qPRWv/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 35</td>
+    <td><a href="https://drive.google.com/file/d/1NmLNn2dtpDtvq4e_GECKvyVB1CK5wk99/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 36</td>
+    <td><a href="https://drive.google.com/file/d/1yC5cNlnZWdEM1gkeQwCpUWPY8N0bbj1G/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 37</td>
+    <td><a href="https://drive.google.com/file/d/1krpUzE1sUQ5Fx0fkKQrC4PMMYux6xB61/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 38</td>
+    <td><a href="https://drive.google.com/file/d/1NQWq4YIT4TcMZEMXD4_qlCeOpZPH7EqB/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 39</td>
+    <td><a href="https://drive.google.com/file/d/1yaH1LRCPA60BZGNmEWGE-C5e1fYuPMiZ/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 40</td>
+    <td><a href="https://drive.google.com/file/d/1tEwiJPRAPMGFzXu96DcdwqccnR98Hzaj/view?usp=share_link">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 41</td>
+    <td><a href="https://docs.google.com/document/d/1fdwW1z9q5MUdv7CAW2yEIg20UeDzY3J-/edit?usp=share_link&ouid=107276212804417856791&rtpof=true&sd=true">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 42</td>
+    <td><a href="https://docs.google.com/document/d/1uZZZUz3wm9RBvyXCecGQ5ejRGrUT78Id/edit?usp=share_link&ouid=107276212804417856791&rtpof=true&sd=true">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 43</td>
+    <td><a href="https://docs.google.com/document/d/1sx8VgoFoySnr3BQKvJPHKt3Yg_3NFgB4/edit?usp=share_link&ouid=107276212804417856791&rtpof=true&sd=true">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 44</td>
+    <td><a href="https://docs.google.com/document/d/1sx8VgoFoySnr3BQKvJPHKt3Yg_3NFgB4/edit?usp=share_link&ouid=107276212804417856791&rtpof=true&sd=true">Download</a></td>
+  </tr>
+  <tr>
+    <td>Biodata template 45</td>
+    <td><a href="https://docs.google.com/document/d/1sx8VgoFoySnr3BQKvJPHKt3Yg_3NFgB4/edit?usp=share_link&ouid=107276212804417856791&rtpof=true&sd=true">Download</a></td>
+  </tr>
+  
+  
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Essential Website Links</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Service Name</th>
+    <th style="width:40%;">Website Links</th>
+  </tr>
+  <tr>
+    <td>IndiaPost GDS</td>
+    <td><a href="https://indiapostgdsonline.gov.in/Reg_validation.aspx">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Building Tax/Property Tax</td>
+    <td><a href="https://tax.lsgkerala.gov.in/epayment/QuickPaySearch.php">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Ownership Certificate</td>
+    <td><a href="https://tax.lsgkerala.gov.in/epayment/index.php">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Medisep Status check</td>
+    <td><a href="https://medisep.kerala.gov.in/SearchUser1.jsp?direct">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Mdisep Download</td>
+    <td><a href="https://medisepkerala.com/">Click here</a></td>
+  </tr>
+  <tr>
+    <td> KSEB New Connection</td>
+    <td><a href="https://wss.kseb.in/selfservices/ncsLogin.do">Click here</a></td>
+  </tr>
+  <tr>
+    <td> New EPIC Search Voters ID</td>
+    <td><a href="http://www.ceo.kerala.gov.in/epicSearch/">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Check Voters ID in Voters ID List</td>
+    <td><a href="https://electoralsearch.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td> MG University Orginal Certificate Apply</td>
+    <td><a href="https://electoralsearch.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Voters ID List Download</td>
+    <td><a href="http://www.ceo.kerala.gov.in/electoralrolls.html">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Sevsana Pension</td>
+    <td><a href="https://welfarepension.lsgkerala.gov.in/Web_efileReg.aspx">Click here</a></td>
+  </tr>
+  <tr>
+  <tr>
+   <td> Birth/Death/Marriage Certificate Download Corporation</td>
+    <td><a href="https://cr.lsgkerala.gov.in/RegSearch.php">Click here</a></td>
+  </tr>  
+  <tr>
+    <td> Birth/Death/Marriage Certificate Download Panchayath</td>
+    <td><a href="https://cr.lsgkerala.gov.in/RegSearch.php">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Birth/Death/Marriage Certificate Registration Panchayath</td>
+    <td><a href="https://cr.lsgkerala.gov.in/RegSearch.php">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Employment Exchange Special renewal</td>
+    <td><a href="https://eemployment.kerala.gov.in/pub/publicProcess/special_renewal_process_index">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Employment Exchange Renewal</td>
+    <td><a href="https://eemployment.kerala.gov.in/pub/publicProcess/renewal">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Employment Exchange Registration</td>
+    <td><a href="https://eemployment.kerala.gov.in/usr/logins/jobseeker">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Voters ID New & Correction</td>
+    <td><a href="https://voterportal.eci.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Voters ID New & Correction</td>
+    <td><a href="https://voterportal.eci.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Pravasi Kshemanidhi New registration,Login,Payment </td>
+    <td><a href="https://register.pravasikerala.org/public/index.php/online/PublicLogin">Click here</a></td>
+  </tr>
+  <tr>
+  <tr>
+    <td> Employment Exchange Registration</td>
+    <td><a href="https://eemployment.kerala.gov.in/usr/logins/jobseeker">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Sabarimala Booking</td>
+    <td><a href="https://sabarimalaonline.org/#/register">Click here</a></td>
+  </tr>
+  <tr>
+  <tr>
+    <td> PM Kisan New Farmer Registration</td>
+    <td><a href="https://pmkisan.gov.in/registrationformnew.aspx">Click here</a></td>
+  </tr>
+  <tr>
+    <td> PM Kisan E-kyc</td>
+    <td><a href="https://exlink.pmkisan.gov.in/aadharekyc.aspx">Click here</a></td>
+  </tr>
+  <tr>
+    <td> PM Kisan Beneficiary Status</td>
+    <td><a href="https://pmkisan.gov.in/beneficiarystatus.aspx">Click here</a></td>
+  </tr>
+  <tr>
+    <td> Special Permit for Taxi</td>
+    <td><a href="https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml?statecd=Mzc2MzM2MzAzNjY0MzIzODM3NjIzNjY0MzY2MjM3NGI0Yw==">Click here</a></td>
+  </tr>
+  <tr>
+    <td> University Fee Payment1</td>
+    <td><a href="https://wss.kseb.in/selfservices/ncsLogin.do">Click here</a></td>
+  </tr>
+  <tr>
+    <td> University Fee Payment2</td>
+    <td><a href="https://wss.kseb.in/selfservices/ncsLogin.do">Click here</a></td>
+  </tr>
+  <tr>
+    <td>AIMS Registration</td>
+    <td><a href="https://www.aims.kerala.gov.in/cropinsurance">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Rationcard Services</td>
+    <td><a href="https://ecitizen.civilsupplieskerala.gov.in/index.php/c_login">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Plus One Allotment</td>
+    <td><a href="https://hscap.kerala.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Speed Post Tracking</td>
+    <td><a href="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Aadhaar Link Status</td>
+    <td><a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/link-aadhaar-status">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Aadhaar Linking</td>
+    <td><a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Instant</td>
+    <td><a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/getNewEpan">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard New UTI</td>
+    <td><a href="https://www.psaonline.utiitsl.com/psaonline/showLogin">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Reprint UTI ( Order new PVC )</td>
+    <td><a href="https://www.pan.utiitsl.com/PAN/reprint.html">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Reprint NSDL ( Oreder new PVC ) </td>
+    <td><a href="https://www.onlineservices.nsdl.com/paam/ReprintEPan.html">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pancard Instant status & download</td>
+    <td><a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/checkStatusDownloadEpan">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pre/Post Matric New Registration</td>
+    <td><a href="https://scholarships.gov.in/fresh/newStudentRegFrm.action">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pre/Post Matric Renewal</td>
+    <td><a href="https://scholarships.gov.in/renewal/loginPage.action">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Egrantz Scholorship</td>
+    <td><a href="https://www.egrantz.kerala.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Encumbrance (Kudikadam) status check</td>
+    <td><a href="https://pearl.registration.kerala.gov.in/all_status_check.php?tok=k48jbhd4f9kd38">Click here</a></td>
+  </tr>
+  <tr>
+    <td>PSC</td>
+    <td><a href="https://thulasi.psc.kerala.gov.in/thulasi/">Click Here</a></td>
+  </tr>
+  <tr>
+    <td>Land Tax</td>
+    <td><a href="https://revenue.kerala.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>SSC</td>
+    <td><a href="https://ssc.nic.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Bhoomi tharam mattam</td>
+    <td><a href="https://www.revenue.kerala.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>NEET Applicantion</td>
+    <td><a href="https://neet.nta.nic.in/">Download</a></td>
+  </tr>
+  <tr>
+    <td>Niti Ayog</td>
+    <td><a href="https://drive.google.com/file/d/1G5Q7Wsy_Gl66AX-JpyiyAKG_pZOyr30k/view?usp=share_link">Click here</a></td>
+  </tr>
+  <tr>
+    <td>KTET Application</td>
+    <td><a href="https://ktet.kerala.gov.in/Registration/exam_registration_instructions.php">Click here</a></td>
+  </tr>
+  <tr>
+    <td>PF Withdrawal</td>
+    <td><a href="#">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Non Availability certificate</td>
+    <td><a href="#">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Ownership Change certificate</td>
+    <td><a href="#">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Fishermen Welfare Schemes</td>
+    <td><a href="https://www.fims.kerala.gov.in/">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Domicile certificate</td>
+    <td><a href="https://edistrict.kerala.gov.in/">Click here</a></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
